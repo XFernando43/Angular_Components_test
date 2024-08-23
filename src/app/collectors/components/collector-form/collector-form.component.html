@@ -1,1 +1,160 @@
-<p>collector-form works!</p>
+<section class="border-2 border-slate-100 shadow-2xl max-w-3xl mx-auto">
+    <header class="px-14 py-10 border-b-2 border-slate-100">
+        <h1 class="font-medium text-3xl">Formulario de cobranza</h1>
+    </header>
+
+    <div class="border-y-2 border-slate-100 p-10 flex flex-col gap-8">
+
+        <!-- Sección 1 -->
+        <div class="flex flex-col gap-4">
+            <label for="nombre" class="font-semibold">Nombre *</label>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre"
+                    class="border-2 border-red-500 px-4 py-3 rounded-md">
+                <input type="text" name="apellido" id="apellido" placeholder="Apellido"
+                    class="border-2 border-red-500 px-4 py-3 rounded-md">
+ 
+            </div>
+        </div>
+
+        <!-- Sección 2 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="flex flex-col gap-2">
+                <label for="doi" class="font-semibold">Número de documento de identidad *</label>
+                <input type="text" name="doi" id="doi" placeholder="DOI"
+                    class="border-2 border-red-500 px-4 py-3 rounded-md">
+            </div>
+            <div class="flex flex-col gap-2">
+                <label for="fecha-visita" class="font-semibold">Fecha de visita *</label>
+                <input type="date" name="fecha-visita" id="fecha-visita"
+                    class="border-2 border-red-500 px-4 py-3 rounded-md">
+            </div>
+        </div>
+
+        <!-- Sección 3 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="flex flex-col gap-2">
+                <label for="hora-visita" class="font-semibold">Hora de visita *</label>
+                <input type="time" name="hora-visita" id="hora-visita"
+                    class="border-2 border-red-500 px-4 py-3 rounded-md">
+            </div>
+            <div class="flex flex-col gap-2">
+                <label class="font-semibold">¿Hubo contacto en vivo con el cliente visitado? *</label>
+                <div class="flex items-center gap-4">
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="contacto" id="contacto-si" class="text-red-500">
+                        Sí
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="contacto" id="contacto-no" class="text-red-500">
+                        No
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección 4 -->
+        <div class="flex flex-col gap-4">
+            <span class="font-semibold">Recomendación de horarios para futuras visitas *</span>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <label class="flex items-center gap-2">
+                    <input type="checkbox" name="horario" value="7-8am" class="text-red-500">
+                    7am - 8am
+                </label>
+                <label class="flex items-center gap-2">
+                    <input type="checkbox" name="horario" value="8-9am" class="text-red-500">
+                    8am - 9am
+                </label>
+                <label class="flex items-center gap-2">
+                    <input type="checkbox" name="horario" value="manana" class="text-red-500">
+                    Toda la mañana
+                </label>
+                <label class="flex items-center gap-2">
+                    <input type="checkbox" name="horario" value="mediodia" class="text-red-500">
+                    Al mediodía
+                </label>
+                <label class="flex items-center gap-2">
+                    <input type="checkbox" name="horario" value="1-3pm" class="text-red-500">
+                    1pm - 3pm
+                </label>
+                <label class="flex items-center gap-2">
+                    <input type="checkbox" name="horario" value="4-5pm" class="text-red-500">
+                    4pm - 5pm
+                </label>
+                <label class="flex items-center gap-2">
+                    <input type="checkbox" name="horario" value="5-6pm" class="text-red-500">
+                    5pm - 6pm
+                </label>
+                <label class="flex items-center gap-2">
+                    <input type="checkbox" name="horario" value="7-8pm" class="text-red-500">
+                    7pm - 8pm
+                </label>
+            </div>
+        </div>
+
+        <!-- Sección 5 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="flex flex-col gap-2">
+                <span class="font-semibold">¿Compromiso de Pago? *</span>
+                <div class="flex items-center gap-4">
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="compromiso-pago" value="si" class="text-red-500">
+                        Sí
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="compromiso-pago" value="no" class="text-red-500">
+                        No
+                    </label>
+                </div>
+            </div>
+            <div class="flex flex-col gap-2">
+                <label for="fecha-compromiso" class="font-semibold">Fecha de compromiso de pago</label>
+                <input type="date" name="fecha-compromiso" id="fecha-compromiso"
+                    class="border-2 border-red-500 px-4 py-3 rounded-md">
+            </div>
+        </div>
+
+        <!-- Sección 6 -->
+        <div class="flex flex-col gap-4">
+            <span class="font-semibold">¿Se entregó la carta?</span>
+            <div class="flex items-center gap-4">
+                <label class="flex items-center gap-2">
+                    <input type="radio" name="entrega-carta" value="si" class="text-red-500">
+                    Sí
+                </label>
+                <label class="flex items-center gap-2">
+                    <input type="radio" name="entrega-carta" value="no" class="text-red-500">
+                    No
+                </label>
+            </div>
+        </div>
+
+        <!-- Sección 7 -->
+        <div class="flex flex-col gap-4">
+            <label for="comentarios-relevantes" class="font-semibold">Comentarios Relevantes</label>
+            <textarea name="comentarios-relevantes" id="comentarios-relevantes"
+                class="w-full border-2 border-red-500 px-4 py-3 rounded-md"></textarea>
+        </div>
+
+        <!-- Sección 8 -->
+        <div class="flex flex-col gap-4">
+            <label for="archivos-relevantes" class="font-semibold">Carga de archivos relevantes</label>
+            <input type="file" name="archivos-relevantes" id="archivos-relevantes"
+                class="border-2 border-red-500 px-4 py-3 rounded-md">
+        </div>
+
+        <!-- Sección 9 -->
+        <div class="flex flex-col gap-4">
+            <label for="cobrador" class="font-semibold">Cobrador *</label>
+            <input type="text" name="cobrador" id="cobrador" class="border-2 border-red-500 px-4 py-3 rounded-md">
+        </div>
+
+    </div>
+
+    <footer class="px-14 py-5 border-b-2 border-slate-100 text-center shadow-lg">
+        <button class="bg-green-600 hover:bg-green-500 px-10 py-3 text-white font-normal text-sm rounded">
+            Enviar
+        </button>
+    </footer>
+
+</section>
