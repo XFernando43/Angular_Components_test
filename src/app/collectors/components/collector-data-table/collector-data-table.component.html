@@ -1,1 +1,68 @@
-<p>collector-data-table works!</p>
+<div class="flex flex-col gap-3 py-8 p-10 bg-transparent">
+    <div class="flex flex-row justify-between">
+      <button mat-button
+        class="flex flex-row items-center justify-center gap-3 border-2 border-blue-400 px-2 py-1 rounded-lg text-blue-600 hover:bg-blue-100 focus:outline-none focus:ring-2 focus:ring-blue-500">
+        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="clear"></mat-icon>
+        Clear
+      </button>
+  
+      <div class="relative flex items-center">
+        <mat-icon class="absolute left-3 text-gray-400">search</mat-icon>
+        <input type="password" placeholder="search keyword"
+          class="pl-10 py-2 text-sm border-2 rounded-md border-blue-200 hover:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500" />
+      </div>
+    </div>
+  
+  
+  
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 w-full h-full">
+      <ng-container matColumnDef="nroSolicitud">
+        <th mat-header-cell *matHeaderCellDef class="text-center">nroSolicitud</th>
+        <td mat-cell *matCellDef="let element" class="text-center">{{ element.nroSolicitud }}</td>
+      </ng-container>
+  
+      <ng-container matColumnDef="Nombre">
+        <th mat-header-cell *matHeaderCellDef class="text-center">Nombre</th>
+        <td mat-cell *matCellDef="let element" class="text-center">{{ element.nombre }} {{ element.apellido }}</td>
+      </ng-container>
+  
+      <ng-container matColumnDef="Doc. identidad">
+        <th mat-header-cell *matHeaderCellDef class="text-center">Doc. identidad</th>
+        <td mat-cell *matCellDef="let element" class="text-center">{{ element.docIdentidad }}</td>
+      </ng-container>
+  
+      <ng-container matColumnDef="Status">
+        <th mat-header-cell *matHeaderCellDef class="text-center">Status</th>
+        <td mat-cell *matCellDef="let element" class="items-center">
+          <!-- <app-tag-component message="{{element.status}}" /> -->
+        </td>
+      </ng-container>
+  
+      <ng-container matColumnDef="Fecha de Cobranza">
+        <th mat-header-cell *matHeaderCellDef class="text-center">Fecha de Cobranza</th>
+        <td mat-cell *matCellDef="let element" class="text-center">{{ element.fechaCobranza }}</td>
+      </ng-container>
+  
+      <ng-container matColumnDef="acciones">
+        <th mat-header-cell *matHeaderCellDef class="text-center">Acciones</th>
+        <td mat-cell *matCellDef="let element" class="items-center">
+          <button (click)="navigateTo('Formulario')"
+            class="flex flex-row gap-2 px-2 py-2 justify-center items-center bg-blue-500 rounded-lg text-white m-3 hover:bg-blue-300 ">
+            <mat-icon>edit</mat-icon> Completar Form
+          </button>
+        </td>
+      </ng-container>
+  
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+  
+    <mat-paginator [length]="100" [pageSize]="10" [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page">
+    </mat-paginator>
+  
+  </div>
+
+
+
+
+  
