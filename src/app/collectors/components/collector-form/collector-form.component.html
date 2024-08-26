@@ -10,10 +10,10 @@
             <label for="nombre" class="font-medium">Nombre *</label>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <input type="text" name="nombre" id="nombre" placeholder="Nombre"
-                    class="border-slate-400  hover:border-blue-500 hover:shadow-lg hover:shadow-blue-300 focus:outline-none focus:ring-1 focus:ring-blue-500 px-4 py-3 rounded-md transition ease-in-out duration-200">
+                    class="border border-slate-400  hover:border-blue-500 hover:shadow-lg hover:shadow-blue-300 focus:outline-none focus:ring-1 focus:ring-blue-500 px-4 py-3 rounded-md transition ease-in-out duration-200">
                 <input type="text" name="apellido" id="apellido" placeholder="Apellido"
-                    class="border-slate-400  hover:border-blue-500 hover:shadow-lg hover:shadow-blue-300 focus:outline-none focus:ring-1 focus:ring-blue-500 px-4 py-3 rounded-md transition ease-in-out duration-200">
- 
+                    class="border border-slate-400  hover:border-blue-500 hover:shadow-lg hover:shadow-blue-300 focus:outline-none focus:ring-1 focus:ring-blue-500 px-4 py-3 rounded-md transition ease-in-out duration-200">
+
             </div>
         </div>
 
@@ -22,12 +22,12 @@
             <div class="flex flex-col gap-2">
                 <label for="doi" class="font-medium">Número de documento de identidad *</label>
                 <input type="text" name="doi" id="doi" placeholder="DOI"
-                    class="border-slate-400  hover:border-blue-500 hover:shadow-lg hover:shadow-blue-300 focus:outline-none focus:ring-1 focus:ring-blue-500 px-4 py-3 rounded-md transition ease-in-out duration-200">
+                    class="border border-slate-400  hover:border-blue-500 hover:shadow-lg hover:shadow-blue-300 focus:outline-none focus:ring-1 focus:ring-blue-500 px-4 py-3 rounded-md transition ease-in-out duration-200">
             </div>
             <div class="flex flex-col gap-2">
                 <label for="fecha-visita" class="font-medium">Fecha de visita *</label>
                 <input type="date" name="fecha-visita" id="fecha-visita"
-                    class="border-slate-400  hover:border-blue-500 hover:shadow-lg hover:shadow-blue-300 focus:outline-none focus:ring-1 focus:ring-blue-500 px-4 py-3 rounded-md transition ease-in-out duration-200">
+                    class="border border-slate-400  hover:border-blue-500 hover:shadow-lg hover:shadow-blue-300 focus:outline-none focus:ring-1 focus:ring-blue-500 px-4 py-3 rounded-md transition ease-in-out duration-200">
             </div>
         </div>
 
@@ -36,7 +36,7 @@
             <div class="flex flex-col gap-2">
                 <label for="hora-visita" class="font-medium">Hora de visita *</label>
                 <input type="time" name="hora-visita" id="hora-visita"
-                    class="border-slate-400  hover:border-blue-500 hover:shadow-lg hover:shadow-blue-300 focus:outline-none focus:ring-1 focus:ring-blue-500 px-4 py-3 rounded-md transition ease-in-out duration-200">
+                    class="border border-slate-400  hover:border-blue-500 hover:shadow-lg hover:shadow-blue-300 focus:outline-none focus:ring-1 focus:ring-blue-500 px-4 py-3 rounded-md transition ease-in-out duration-200">
             </div>
             <div class="flex flex-col gap-2">
                 <label class="font-medium">¿Hubo contacto en vivo con el cliente visitado? *</label>
@@ -56,44 +56,42 @@
         <!-- Sección 4 -->
         <div class="flex flex-col gap-4">
             <span class="font-medium">Recomendación de horarios para futuras visitas *</span>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 font-normal">
                 <label class="flex items-center gap-2">
                     <!-- <input type="checkbox" name="horario" value="7-8am" class="focus:ring-indigo-500"> -->
-                    <input id="helper-checkbox" 
-                        aria-describedby="helper-checkbox-text" 
-                        type="checkbox" value="" 
+                    <input id="helper-checkbox" aria-describedby="helper-checkbox-text" type="checkbox" value=""
                         class="accent-violet-500 scale-125 rounded-md border border-blue-gray-200 transition-all duration-300 hover:border-violet-200 hover:before:opacity-10 checked:bg-teal-500">
 
-                    7am - 8am
-                    
+                    7 am - 8am
+
                 </label>
                 <label class="flex items-center gap-2">
-                    <input type="checkbox" name="horario" value="8-9am" class="text-red-500">
-                    8am - 9am
+                    <input type="checkbox" name="horario" value="8-9am" class="accent-violet-500 scale-125 rounded-md border border-blue-gray-200 transition-all duration-300 hover:border-violet-200 hover:before:opacity-10 checked:bg-teal-500">
+                    8 am - 9am
                 </label>
                 <label class="flex items-center gap-2">
-                    <input type="checkbox" name="horario" value="manana" class="text-red-500">
+                    <input type="checkbox" name="horario" value="manana" class="accent-violet-500 scale-125 rounded-md border border-blue-gray-200 transition-all duration-300 hover:border-violet-200 hover:before:opacity-10 checked:bg-teal-500">
                     Toda la mañana
                 </label>
                 <label class="flex items-center gap-2">
-                    <input type="checkbox" name="horario" value="mediodia" class="text-red-500">
+                    <input type="checkbox" name="horario" value="mediodia" class="accent-violet-500 scale-125 rounded-md border border-blue-gray-200 transition-all duration-300 hover:border-violet-200 hover:before:opacity-10 checked:bg-teal-500">
                     Al mediodía
                 </label>
                 <label class="flex items-center gap-2">
-                    <input type="checkbox" name="horario" value="1-3pm" class="text-red-500">
-                    1pm - 3pm
+                    <input type="checkbox" name="horario" value="1-3pm" class="accent-violet-500 scale-125 rounded-md border border-blue-gray-200 transition-all duration-300 hover:border-violet-200 hover:before:opacity-10 checked:bg-teal-500">
+                    1 pm - 3pm
                 </label>
                 <label class="flex items-center gap-2">
-                    <input type="checkbox" name="horario" value="4-5pm" class="text-red-500">
-                    4pm - 5pm
+                    <input type="checkbox" name="horario" value="4-5pm" class="accent-violet-500 scale-125 rounded-md border border-blue-gray-200 transition-all duration-300 hover:border-violet-200 hover:before:opacity-10 checked:bg-teal-500">
+                    4 pm - 5pm
                 </label>
                 <label class="flex items-center gap-2">
-                    <input type="checkbox" name="horario" value="5-6pm" class="text-red-500">
-                    5pm - 6pm
+                    <input type="checkbox" name="horario" value="5-6pm" class="accent-violet-500 scale-125 rounded-md border border-blue-gray-200 transition-all duration-300 hover:border-violet-200 hover:before:opacity-10 checked:bg-teal-500">
+                    5 pm - 6pm
                 </label>
                 <label class="flex items-center gap-2">
-                    <input type="checkbox" name="horario" value="7-8pm" class="text-red-500">
-                    7pm - 8pm
+                    <input type="checkbox" name="horario" value="7-8pm" class="accent-violet-500 scale-125 rounded-md border border-blue-gray-200 transition-all duration-300 hover:border-violet-200 hover:before:opacity-10 checked:bg-teal-500">
+                    7 pm - 8pm
                 </label>
             </div>
         </div>
@@ -139,22 +137,23 @@
         <div class="flex flex-col gap-4">
             <label for="comentarios-relevantes" class="font-medium">Comentarios Relevantes</label>
             <textarea name="comentarios-relevantes" id="comentarios-relevantes"
-            class="w-full border border-slate-400  hover:border-blue-500 hover:shadow-lg hover:shadow-blue-300 focus:outline-none focus:ring-1 focus:ring-blue-500 px-4 py-3 rounded-md transition ease-in-out duration-200">
+                class="w-full border border-slate-400  hover:border-blue-500 hover:shadow-lg hover:shadow-blue-300 focus:outline-none focus:ring-1 focus:ring-blue-500 px-4 py-3 rounded-md transition ease-in-out duration-200">
         </textarea>
         </div>
 
         <!-- Sección 8 -->
         <div class="flex flex-col gap-4">
-            <label for="archivos-relevantes" class="font-medium">Carga de archivos relevantes</label>
-            <input type="file" name="archivos-relevantes" id="archivos-relevantes"
-                class="border-slate-400  hover:border-blue-500 hover:shadow-lg hover:shadow-blue-300 focus:outline-none focus:ring-1 focus:ring-blue-500 px-4 py-3 rounded-md transition ease-in-out duration-200">
+            <label for="archivos-relevantes" class="font-medium">Carga de archivos relevantes, foto de la casa,
+                ubicación de la moto, foto con el cliente</label>
+            <app-input-files />
         </div>
+
 
         <!-- Sección 9 -->
         <div class="flex flex-col gap-4">
             <label for="cobrador" class="font-medium">Cobrador *</label>
-            <input type="text" name="cobrador" id="cobrador" 
-            class="w-4/12 border border-slate-400  hover:border-blue-500 hover:shadow-lg hover:shadow-blue-300 focus:outline-none focus:ring-1 focus:ring-blue-500 px-4 py-3 rounded-md transition ease-in-out duration-200">
+            <input type="text" name="cobrador" id="cobrador"
+                class="w-4/12 border border-slate-400  hover:border-blue-500 hover:shadow-lg hover:shadow-blue-300 focus:outline-none focus:ring-1 focus:ring-blue-500 px-4 py-3 rounded-md transition ease-in-out duration-200">
         </div>
 
     </div>
