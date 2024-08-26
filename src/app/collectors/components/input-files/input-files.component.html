@@ -4,8 +4,7 @@
                 items-center justify-center py-3
                 border-2 border-slate-400 border-dotted">
       <div class="flex flex-col items-center gap-1">
-        <mat-icon aria-hidden="false" class="text-slate-300" aria-label="Example home icon"
-          fontIcon="backup icon"></mat-icon>
+        <mat-icon class="text-slate-300" fontIcon="backup icon"></mat-icon>
         <span class="text-sm font-medium">Buscar Archivos</span>
         <span class="text-xs text-slate-400">Arrastre y Suelte archivos aquí</span>
       </div>
@@ -18,7 +17,7 @@
   <ul class="list-none flex flex-col gap-2">
     <li *ngFor="let file of selectedFiles" class="w-full flex items-center p-2 bg-blue-50 rounded-md text-black">
       
-      <mat-icon aria-hidden="false" class="text-slate-500" aria-label="File icon" fontIcon="folder"></mat-icon>
+      <mat-icon class="text-slate-500" fontIcon="folder"></mat-icon>
 
       <div class="flex justify-between w-full ml-3">
         <span class="font-medium">{{ file.name }}</span>
@@ -26,8 +25,7 @@
       </div>
 
       <div class="ml-3">
-        <mat-icon aria-hidden="false" class="text-slate-500 hover:text-red-700 cursor-pointer" aria-label="Delete icon"
-          fontIcon="delete" (click)="removeFile(file)"></mat-icon>
+        <mat-icon  class="text-slate-500 hover:text-red-700 cursor-pointer" fontIcon="delete" (click)="removeFile(file)"></mat-icon>
       </div>
     </li>
   </ul>
