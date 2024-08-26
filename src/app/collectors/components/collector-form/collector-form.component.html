@@ -7,12 +7,12 @@
 
         <!-- Sección 1 -->
         <div class="flex flex-col gap-4">
-            <label for="nombre" class="font-semibold">Nombre *</label>
+            <label for="nombre" class="font-medium">Nombre *</label>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <input type="text" name="nombre" id="nombre" placeholder="Nombre"
-                    class="border-2 border-red-500 px-4 py-3 rounded-md">
+                    class="border-slate-400  hover:border-blue-500 hover:shadow-lg hover:shadow-blue-300 focus:outline-none focus:ring-1 focus:ring-blue-500 px-4 py-3 rounded-md transition ease-in-out duration-200">
                 <input type="text" name="apellido" id="apellido" placeholder="Apellido"
-                    class="border-2 border-red-500 px-4 py-3 rounded-md">
+                    class="border-slate-400  hover:border-blue-500 hover:shadow-lg hover:shadow-blue-300 focus:outline-none focus:ring-1 focus:ring-blue-500 px-4 py-3 rounded-md transition ease-in-out duration-200">
  
             </div>
         </div>
@@ -20,27 +20,27 @@
         <!-- Sección 2 -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div class="flex flex-col gap-2">
-                <label for="doi" class="font-semibold">Número de documento de identidad *</label>
+                <label for="doi" class="font-medium">Número de documento de identidad *</label>
                 <input type="text" name="doi" id="doi" placeholder="DOI"
-                    class="border-2 border-red-500 px-4 py-3 rounded-md">
+                    class="border-slate-400  hover:border-blue-500 hover:shadow-lg hover:shadow-blue-300 focus:outline-none focus:ring-1 focus:ring-blue-500 px-4 py-3 rounded-md transition ease-in-out duration-200">
             </div>
             <div class="flex flex-col gap-2">
-                <label for="fecha-visita" class="font-semibold">Fecha de visita *</label>
+                <label for="fecha-visita" class="font-medium">Fecha de visita *</label>
                 <input type="date" name="fecha-visita" id="fecha-visita"
-                    class="border-2 border-red-500 px-4 py-3 rounded-md">
+                    class="border-slate-400  hover:border-blue-500 hover:shadow-lg hover:shadow-blue-300 focus:outline-none focus:ring-1 focus:ring-blue-500 px-4 py-3 rounded-md transition ease-in-out duration-200">
             </div>
         </div>
 
         <!-- Sección 3 -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div class="flex flex-col gap-2">
-                <label for="hora-visita" class="font-semibold">Hora de visita *</label>
+                <label for="hora-visita" class="font-medium">Hora de visita *</label>
                 <input type="time" name="hora-visita" id="hora-visita"
-                    class="border-2 border-red-500 px-4 py-3 rounded-md">
+                    class="border-slate-400  hover:border-blue-500 hover:shadow-lg hover:shadow-blue-300 focus:outline-none focus:ring-1 focus:ring-blue-500 px-4 py-3 rounded-md transition ease-in-out duration-200">
             </div>
             <div class="flex flex-col gap-2">
-                <label class="font-semibold">¿Hubo contacto en vivo con el cliente visitado? *</label>
-                <div class="flex items-center gap-4">
+                <label class="font-medium">¿Hubo contacto en vivo con el cliente visitado? *</label>
+                <div class="flex flex-col  gap-4">
                     <label class="flex items-center gap-2">
                         <input type="radio" name="contacto" id="contacto-si" class="text-red-500">
                         Sí
@@ -55,11 +55,17 @@
 
         <!-- Sección 4 -->
         <div class="flex flex-col gap-4">
-            <span class="font-semibold">Recomendación de horarios para futuras visitas *</span>
+            <span class="font-medium">Recomendación de horarios para futuras visitas *</span>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <label class="flex items-center gap-2">
-                    <input type="checkbox" name="horario" value="7-8am" class="text-red-500">
+                    <!-- <input type="checkbox" name="horario" value="7-8am" class="focus:ring-indigo-500"> -->
+                    <input id="helper-checkbox" 
+                        aria-describedby="helper-checkbox-text" 
+                        type="checkbox" value="" 
+                        class="accent-violet-500 scale-125 rounded-md border border-blue-gray-200 transition-all duration-300 hover:border-violet-200 hover:before:opacity-10 checked:bg-teal-500">
+
                     7am - 8am
+                    
                 </label>
                 <label class="flex items-center gap-2">
                     <input type="checkbox" name="horario" value="8-9am" class="text-red-500">
@@ -95,29 +101,29 @@
         <!-- Sección 5 -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div class="flex flex-col gap-2">
-                <span class="font-semibold">¿Compromiso de Pago? *</span>
-                <div class="flex items-center gap-4">
+                <span class="font-medium">¿Compromiso de Pago? *</span>
+                <div class="flex flex-col gap-4">
                     <label class="flex items-center gap-2">
-                        <input type="radio" name="compromiso-pago" value="si" class="text-red-500">
+                        <input type="radio" name="compromiso-pago" value="si">
                         Sí
                     </label>
                     <label class="flex items-center gap-2">
-                        <input type="radio" name="compromiso-pago" value="no" class="text-red-500">
+                        <input type="radio" name="compromiso-pago" value="no">
                         No
                     </label>
                 </div>
             </div>
             <div class="flex flex-col gap-2">
-                <label for="fecha-compromiso" class="font-semibold">Fecha de compromiso de pago</label>
+                <label for="fecha-compromiso" class="font-medium">Fecha de compromiso de pago</label>
                 <input type="date" name="fecha-compromiso" id="fecha-compromiso"
-                    class="border-2 border-red-500 px-4 py-3 rounded-md">
+                    class="border-slate-400  hover:border-blue-500 hover:shadow-lg hover:shadow-blue-300 focus:outline-none focus:ring-1 focus:ring-blue-500 px-4 py-3 rounded-md transition ease-in-out duration-200">
             </div>
         </div>
 
         <!-- Sección 6 -->
         <div class="flex flex-col gap-4">
-            <span class="font-semibold">¿Se entregó la carta?</span>
-            <div class="flex items-center gap-4">
+            <span class="font-medium">¿Se entregó la carta?</span>
+            <div class="flex flex-col gap-4">
                 <label class="flex items-center gap-2">
                     <input type="radio" name="entrega-carta" value="si" class="text-red-500">
                     Sí
@@ -131,22 +137,24 @@
 
         <!-- Sección 7 -->
         <div class="flex flex-col gap-4">
-            <label for="comentarios-relevantes" class="font-semibold">Comentarios Relevantes</label>
+            <label for="comentarios-relevantes" class="font-medium">Comentarios Relevantes</label>
             <textarea name="comentarios-relevantes" id="comentarios-relevantes"
-                class="w-full border-2 border-red-500 px-4 py-3 rounded-md"></textarea>
+            class="w-full border border-slate-400  hover:border-blue-500 hover:shadow-lg hover:shadow-blue-300 focus:outline-none focus:ring-1 focus:ring-blue-500 px-4 py-3 rounded-md transition ease-in-out duration-200">
+        </textarea>
         </div>
 
         <!-- Sección 8 -->
         <div class="flex flex-col gap-4">
-            <label for="archivos-relevantes" class="font-semibold">Carga de archivos relevantes</label>
+            <label for="archivos-relevantes" class="font-medium">Carga de archivos relevantes</label>
             <input type="file" name="archivos-relevantes" id="archivos-relevantes"
-                class="border-2 border-red-500 px-4 py-3 rounded-md">
+                class="border-slate-400  hover:border-blue-500 hover:shadow-lg hover:shadow-blue-300 focus:outline-none focus:ring-1 focus:ring-blue-500 px-4 py-3 rounded-md transition ease-in-out duration-200">
         </div>
 
         <!-- Sección 9 -->
         <div class="flex flex-col gap-4">
-            <label for="cobrador" class="font-semibold">Cobrador *</label>
-            <input type="text" name="cobrador" id="cobrador" class="border-2 border-red-500 px-4 py-3 rounded-md">
+            <label for="cobrador" class="font-medium">Cobrador *</label>
+            <input type="text" name="cobrador" id="cobrador" 
+            class="w-4/12 border border-slate-400  hover:border-blue-500 hover:shadow-lg hover:shadow-blue-300 focus:outline-none focus:ring-1 focus:ring-blue-500 px-4 py-3 rounded-md transition ease-in-out duration-200">
         </div>
 
     </div>

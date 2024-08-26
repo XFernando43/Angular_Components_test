@@ -1,0 +1,9 @@
+.custom-checkbox{
+    border-color: rgb(75 85 99 / var(--tw-border-opacity));
+    border-radius: 0.25rem;
+}
+
+.custom-checkbox:focus {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgb(59 130 246 / var(--tw-ring-opacity)) /* #3b82f6 */;
+}
