@@ -4,6 +4,7 @@ import { MatPaginatorModule, MatPaginator } from '@angular/material/paginator';
 import { Router } from '@angular/router';
 import {MatIconModule} from '@angular/material/icon';
 import { CommonModule } from '@angular/common';
+import { TagComponent } from '../../../public/components/tag/tag.component';
 
 export interface PeriodicElement {
   nombre: string;
@@ -229,7 +230,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
 @Component({
   selector: 'app-collector-data-table',
   standalone: true,
-  imports: [MatIconModule,CommonModule,MatTableModule,MatPaginator],
+  imports: [MatIconModule,CommonModule,MatTableModule,MatPaginator,TagComponent],
   templateUrl: './collector-data-table.component.html',
   styleUrl: './collector-data-table.component.css'
 })
