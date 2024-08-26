@@ -2,7 +2,7 @@
     <button *ngFor="let item of menuItems"
             (click)="selectMenuItem(item)"
             [ngClass]="{
-              'bg-violet-500 ': item.active,
+              'bg-violet-500 text-white': item.active,
               'bg-white hover:bg-slate-50': !item.active
             }"
             class="px-2 py-4 rounded-lg flex flex-row justify-between items-center">      
@@ -10,7 +10,7 @@
         <mat-icon [ngClass]="item.active ? 'text-violet-400' : 'text-black'" fontIcon="apps"></mat-icon>
         <span class="font-medium">{{ item.label }}</span>
       </div>
-      <span class="rounded-full bg-slate-50 font-bold text-center inline-flex items-center justify-center"
+      <span class="rounded-full text-black bg-slate-50 font-bold text-center inline-flex items-center justify-center"
             style="width: 2rem; height: 2rem;">
         {{ item.count }}
       </span>
