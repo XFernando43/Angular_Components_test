@@ -1,12 +1,10 @@
 import { Component, ViewChild } from '@angular/core';
-import {MatTableDataSource, MatTableModule} from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
+import { MatTableDataSource } from '@angular/material/table';
 import { Router } from '@angular/router';
-import {MatIconModule} from '@angular/material/icon';
-import { CommonModule } from '@angular/common';
-import { TagComponent } from '../../../public/components/tag/tag.component';
 import { StatusMenuComponent } from '../status-menu/status-menu.component';
-
+import {MatIconModule} from '@angular/material/icon';
+import { CollectorDataTableComponent } from '../collector-data-table/collector-data-table.component';
 export interface PeriodicElement {
   nombre: string;
   apellido: string;
@@ -66,7 +64,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
     fechaCobranza: '2024-09-01',
   },
   {
-    nroSolicitud: 7,
+    nroSolicitud: 3,
     nombre: 'Carlos',
     apellido: 'García',
     docIdentidad: '11223344C',
@@ -74,7 +72,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
     fechaCobranza: '2024-09-01',
   },
   {
-    nroSolicitud: 8,
+    nroSolicitud: 3,
     nombre: 'Carlos',
     apellido: 'García',
     docIdentidad: '11223344C',
@@ -82,7 +80,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
     fechaCobranza: '2024-09-01',
   },
   {
-    nroSolicitud: 9,
+    nroSolicitud: 3,
     nombre: 'Carlos',
     apellido: 'García',
     docIdentidad: '11223344C',
@@ -90,7 +88,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
     fechaCobranza: '2024-09-01',
   },
   {
-    nroSolicitud: 10,
+    nroSolicitud: 3,
     nombre: 'Carlos',
     apellido: 'García',
     docIdentidad: '11223344C',
@@ -228,14 +226,19 @@ const ELEMENT_DATA: PeriodicElement[] = [
 ];
 
 
+
+
+
+
+
 @Component({
-  selector: 'app-collector-data-table',
+  selector: 'app-info-section',
   standalone: true,
-  imports: [MatIconModule,CommonModule,MatTableModule,MatPaginator,TagComponent,StatusMenuComponent],
-  templateUrl: './collector-data-table.component.html',
-  styleUrl: './collector-data-table.component.css'
+  imports: [StatusMenuComponent,MatIconModule,CollectorDataTableComponent],
+  templateUrl: './info-section.component.html',
+  styleUrl: './info-section.component.css'
 })
-export class CollectorDataTableComponent {
+export class InfoSectionComponent {
   displayedColumns: string[] = ['nroSolicitud','Nombre','Doc. identidad','Status','Fecha de Cobranza','acciones',];
   dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
    

@@ -9,9 +9,9 @@
   }
   
   .mat-mdc-row:hover .mat-mdc-cell {
-    border-color: currentColor;
+    border-color: blue;
   }
   
   .demo-row-is-clicked {
-    font-weight: bold;
+    font-weight: 900;
   }
