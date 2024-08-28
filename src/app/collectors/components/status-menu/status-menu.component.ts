@@ -18,11 +18,10 @@ interface MenuItem {
 })
 export class StatusMenuComponent {
   menuItems: MenuItem[] = [
-    { label: 'Inbox', icon: 'apps', count: 10, active: true },
-    { label: 'Starred', icon: 'apps', count: 5, active: false },
-    { label: 'Spam', icon: 'apps', count: 2, active: false },
-    { label: 'Important', icon: 'apps', count: 8, active: false },
-    { label: 'Sent', icon: 'apps', count: 7, active: false }
+    { label: 'Atrasados', icon: 'apps', count: 10, active: true },
+    { label: 'Pendientes', icon: 'apps', count: 5, active: false },
+    { label: 'Con Mora', icon: 'apps', count: 2, active: false },
+    { label: 'Graves', icon: 'apps', count: 8, active: false },
   ];
 
   selectMenuItem(selectedItem: MenuItem): void {

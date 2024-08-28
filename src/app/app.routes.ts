@@ -5,9 +5,9 @@ import { DashboardPageComponent } from './collectors/pages/dashboard-page/dashbo
 import { NotFoundPageComponent } from './public/pages/not-found-page/not-found-page.component';
 
 export const routes: Routes = [
-    { path: '', redirectTo: 'Login', pathMatch: 'full' },
-    {path:'Login', component:LoginPageComponent},
-    {path:'Dashboard',component:DashboardPageComponent},
-    {path:'Form',component:FormPageComponent},
+    { path: '', redirectTo: 'login', pathMatch: 'full' },
+    {path:'login', component:LoginPageComponent},
+    {path:'dashboard',component:DashboardPageComponent},
+    {path:'form',component:FormPageComponent},
     {path:'**', component:NotFoundPageComponent}
 ];
