@@ -11,7 +11,7 @@
     </div>
   </div>
 
-  <div class="w-full flex flex-col gap-[2px] overflow-auto max-h-[780px]">
+  <div class="w-full flex flex-col gap-[2px] overflow-auto max-h-[700px]">
     <table mat-table [dataSource]="dataSource" class="w-full h-full">
       <ng-container matColumnDef="nroSolicitud">
         <th mat-header-cell *matHeaderCellDef class="text-center">nroSolicitud</th>
@@ -52,8 +52,8 @@
       <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
       <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
     </table>
-
-    <mat-paginator [length]="100" [pageSize]="10" [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page">
-    </mat-paginator>
   </div>
+
+  <mat-paginator [length]="100" [pageSize]="10" [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page">
+  </mat-paginator>
 </section>
