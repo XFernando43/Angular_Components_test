@@ -7,217 +7,7 @@ import { CommonModule } from '@angular/common';
 import { StatusMenuComponent } from '../status-menu/status-menu.component';
 import { TagComponent } from '../../../../../../shared/components/tag/tag.component';
 import { debtors } from '../../interfaces/dbtors.interface';
-
-const ELEMENT_DATA: debtors[] = [
-  {
-    nroSolicitud: 1,
-    nombre: 'Juan',
-    apellido: 'Pérez',
-    docIdentidad: '12345678A',
-    status: 'Pendiente',
-    fechaCobranza: '2024-08-15',
-  },
-  {
-    nroSolicitud: 2,
-    nombre: 'Ana',
-    apellido: 'López',
-    docIdentidad: '87654321B',
-    status: 'Pagado',
-    fechaCobranza: '2024-07-22',
-  },
-  {
-    nroSolicitud: 3,
-    nombre: 'Carlos',
-    apellido: 'García',
-    docIdentidad: '11223344C',
-    status: 'Pendiente',
-    fechaCobranza: '2024-09-01',
-  },
-  {
-    nroSolicitud: 4,
-    nombre: 'Carlos',
-    apellido: 'García',
-    docIdentidad: '11223344C',
-    status: 'Pendiente',
-    fechaCobranza: '2024-09-01',
-  },
-  {
-    nroSolicitud: 5,
-    nombre: 'Carlos',
-    apellido: 'García',
-    docIdentidad: '11223344C',
-    status: 'Pendiente',
-    fechaCobranza: '2024-09-01',
-  },
-  {
-    nroSolicitud: 6,
-    nombre: 'Carlos',
-    apellido: 'García',
-    docIdentidad: '11223344C',
-    status: 'Pendiente',
-    fechaCobranza: '2024-09-01',
-  },
-  {
-    nroSolicitud: 7,
-    nombre: 'Carlos',
-    apellido: 'García',
-    docIdentidad: '11223344C',
-    status: 'Pagado',
-    fechaCobranza: '2024-09-01',
-  },
-  {
-    nroSolicitud: 8,
-    nombre: 'Carlos',
-    apellido: 'García',
-    docIdentidad: '11223344C',
-    status: 'Pagado',
-    fechaCobranza: '2024-09-01',
-  },
-  {
-    nroSolicitud: 9,
-    nombre: 'Carlos',
-    apellido: 'García',
-    docIdentidad: '11223344C',
-    status: 'Pagado',
-    fechaCobranza: '2024-09-01',
-  },
-  {
-    nroSolicitud: 10,
-    nombre: 'Carlos',
-    apellido: 'García',
-    docIdentidad: '11223344C',
-    status: 'Pagado',
-    fechaCobranza: '2024-09-01',
-  },
-  {
-    nroSolicitud: 3,
-    nombre: 'Carlos',
-    apellido: 'García',
-    docIdentidad: '11223344C',
-    status: 'Pagado',
-    fechaCobranza: '2024-09-01',
-  },
-  {
-    nroSolicitud: 3,
-    nombre: 'Carlos',
-    apellido: 'García',
-    docIdentidad: '11223344C',
-    status: 'Pagado',
-    fechaCobranza: '2024-09-01',
-  },
-  {
-    nroSolicitud: 3,
-    nombre: 'Carlos',
-    apellido: 'García',
-    docIdentidad: '11223344C',
-    status: 'Pagado',
-    fechaCobranza: '2024-09-01',
-  },
-  {
-    nroSolicitud: 3,
-    nombre: 'Carlos',
-    apellido: 'García',
-    docIdentidad: '11223344C',
-    status: 'Pagado',
-    fechaCobranza: '2024-09-01',
-  },
-  {
-    nroSolicitud: 3,
-    nombre: 'Carlos',
-    apellido: 'García',
-    docIdentidad: '11223344C',
-    status: 'Pagado',
-    fechaCobranza: '2024-09-01',
-  },
-  {
-    nroSolicitud: 3,
-    nombre: 'Carlos',
-    apellido: 'García',
-    docIdentidad: '11223344C',
-    status: 'Pagado',
-    fechaCobranza: '2024-09-01',
-  },
-  {
-    nroSolicitud: 3,
-    nombre: 'Carlos',
-    apellido: 'García',
-    docIdentidad: '11223344C',
-    status: 'Pagado',
-    fechaCobranza: '2024-09-01',
-  },
-  {
-    nroSolicitud: 3,
-    nombre: 'Carlos',
-    apellido: 'García',
-    docIdentidad: '11223344C',
-    status: 'Pagado',
-    fechaCobranza: '2024-09-01',
-  },
-  {
-    nroSolicitud: 3,
-    nombre: 'Carlos',
-    apellido: 'García',
-    docIdentidad: '11223344C',
-    status: 'Pendiente',
-    fechaCobranza: '2024-09-01',
-  },
-  {
-    nroSolicitud: 3,
-    nombre: 'Carlos',
-    apellido: 'García',
-    docIdentidad: '11223344C',
-    status: 'Pendiente',
-    fechaCobranza: '2024-09-01',
-  },
-  {
-    nroSolicitud: 3,
-    nombre: 'Carlos',
-    apellido: 'García',
-    docIdentidad: '11223344C',
-    status: 'Pendiente',
-    fechaCobranza: '2024-09-01',
-  },
-  {
-    nroSolicitud: 3,
-    nombre: 'Carlos',
-    apellido: 'García',
-    docIdentidad: '11223344C',
-    status: 'Pendiente',
-    fechaCobranza: '2024-09-01',
-  },
-  {
-    nroSolicitud: 3,
-    nombre: 'Carlos',
-    apellido: 'García',
-    docIdentidad: '11223344C',
-    status: 'Pendiente',
-    fechaCobranza: '2024-09-01',
-  },
-  {
-    nroSolicitud: 3,
-    nombre: 'Carlos',
-    apellido: 'García',
-    docIdentidad: '11223344C',
-    status: 'Pendiente',
-    fechaCobranza: '2024-09-01',
-  },
-  {
-    nroSolicitud: 3,
-    nombre: 'Carlos',
-    apellido: 'García',
-    docIdentidad: '11223344C',
-    status: 'Pendiente',
-    fechaCobranza: '2024-09-01',
-  },
-  {
-    nroSolicitud: 3,
-    nombre: 'Carlos',
-    apellido: 'García',
-    docIdentidad: '11223344C',
-    status: 'Pendiente',
-    fechaCobranza: '2024-09-01',
-  },
-];
+import { DebtorsService } from '../../data/service/table.service';
 
 
 @Component({
@@ -229,10 +19,25 @@ const ELEMENT_DATA: debtors[] = [
 })
 export class CollectorDataTableComponent {
   displayedColumns: string[] = ['nroSolicitud','Nombre','Doc. identidad','Status','Fecha de Cobranza','acciones',];
-  dataSource = new MatTableDataSource<debtors>(ELEMENT_DATA);
+  dataSource = new MatTableDataSource<debtors>();
    
   @ViewChild(MatPaginator) paginator!: MatPaginator;
-  constructor(private router: Router) {}
+  constructor(private router: Router, private service:DebtorsService) {
+  }
+
+  ngOnInit(): void {
+    this.loadDebtors();
+  }
+
+  async loadDebtors() {
+    try {
+      const debtorsList = await this.service.getDebtors();
+      this.dataSource.data = debtorsList; 
+    } catch (error) {
+      console.error('Error loading debtors:', error);
+    }
+  }
+
   ngAfterViewInit() {
     this.dataSource.paginator = this.paginator;
   }
