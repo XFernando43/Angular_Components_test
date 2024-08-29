@@ -4,7 +4,7 @@ import { MatPaginator } from '@angular/material/paginator';
 import { Router } from '@angular/router';
 import {MatIconModule} from '@angular/material/icon';
 import { CommonModule } from '@angular/common';
-import { TagComponent } from '../../../public/components/tag/tag.component';
+import { TagComponent } from '../../../shared/components/tag/tag.component';
 import { StatusMenuComponent } from '../status-menu/status-menu.component';
 
 export interface PeriodicElement {
