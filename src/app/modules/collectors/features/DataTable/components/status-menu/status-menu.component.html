@@ -1,35 +1,22 @@
-<section class="flex flex-col gap-5 mt-16 p-4 rounded-xl shadow-2xl max-w-md mx-auto md:max-w-full">
-
-  <button class="border border-blue-500 py-3 text-center rounded-lg text-sm text-blue-500 font-normal hover:bg-blue-50">
-    Compose New
-  </button>
+<section class="flex flex-col gap-5 mt-16 rounded-xl shadow-2xl max-w-md mx-auto md:max-w-full">
 
   <div class="flex flex-col">
-    <button
-  *ngFor="let item of menuItems"
-  (click)="selectMenuItem(item)"
-  [ngClass]="{
-    'bg-blue-500 text-white': item.active,
+    <button *ngFor="let item of menuItems" (click)="selectMenuItem(item)" [ngClass]="{
+    'bg-blue-600 text-white': item.active,
     'bg-white hover:bg-slate-100': !item.active
-  }"
-  class="px-2 sm:px-3 py-2 sm:py-4 rounded-lg flex flex-row justify-between items-center w-full"
->
-  <div class="flex flex-row items-center gap-2 truncate">
-    <mat-icon [ngClass]="item.active ? 'text-white' : 'text-black'" fontIcon="apps"></mat-icon>
-    <span class="font-medium text-xs sm:text-sm md:text-base lg:text-lg truncate">
-      {{ item.label }}
-    </span>
-  </div>
-  <span
-    class="rounded-full text-black bg-slate-50 font-bold text-center inline-flex items-center justify-center"
-    style="width: 1.5rem; height: 1.5rem; font-size: 0.75rem;"
-  >
-    {{ item.count }}
-  </span>
-</button>
+  }" class="px-2 sm:px-3 py-2 sm:py-4 flex flex-row justify-between items-center w-full">
+      <div class="flex flex-row items-center gap-2 truncate">
+        <mat-icon [ngClass]="item.active ? 'text-white' : 'text-black'" fontIcon="apps"></mat-icon>
+        <span class="font-medium text-xs sm:text-sm md:text-base lg:text-lg truncate">
+          {{ item.label }}
+        </span>
+      </div>
+      <span class="rounded-full text-black bg-slate-50 font-bold text-center inline-flex items-center justify-center"
+        style="width: 1.5rem; height: 1.5rem; font-size: 0.75rem;">
+        {{ item.count }}
+      </span>
+    </button>
 
 
   </div>
 </section>
-
-

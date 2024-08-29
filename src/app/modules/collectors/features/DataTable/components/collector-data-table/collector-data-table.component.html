@@ -1,15 +1,25 @@
 <section class="flex flex-col gap-2 shadow-2xl px-5 py-5">
 
-  <div class="flex flex-row gap-4">
-    <div class="relative flex items-center">
-      <mat-icon class="absolute left-3 text-gray-400">search</mat-icon>
-      <input type="text" placeholder="search keyword"
-        class="pl-10 py-2 text-sm border-2 rounded-md border-blue-200 hover:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500" />
+
+
+  <div class="flex justify-between items-center">
+    
+    <h1>Tablero de Busqueda</h1>
+
+    <div class="flex flex-row gap-4">
+      <div class="relative flex items-center">
+        <mat-icon class="absolute left-3 text-gray-400">search</mat-icon>
+        <input type="text" placeholder="search keyword"
+          class="pl-10 py-2 text-sm border-2 rounded-md border-blue-200 hover:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500" />
+      </div>
     </div>
+
   </div>
 
-  <div class="w-full overflow-auto max-h-[780px]">
-    <table mat-table [dataSource]="dataSource" class="w-full h-full demo-table mat-elevation-z8">
+
+
+  <div class="w-full flex flex-col gap-[2px] overflow-auto max-h-[780px]">
+    <table mat-table [dataSource]="dataSource" class="w-full h-full">
       <ng-container matColumnDef="nroSolicitud">
         <th mat-header-cell *matHeaderCellDef class="text-center">nroSolicitud</th>
         <td mat-cell *matCellDef="let element" class="text-center">{{ element.nroSolicitud }}</td>
@@ -39,21 +49,23 @@
 
       <ng-container matColumnDef="acciones">
         <th mat-header-cell *matHeaderCellDef class="text-center">Acciones</th>
+        
         <td mat-cell *matCellDef="let element" class="text-center">
+        
           <button (click)="navigateTo('form')" class="flex flex-row gap-2 px-2 py-2 bg-blue-500 rounded-lg text-white hover:bg-blue-300">
             <mat-icon fontIcon="edit"></mat-icon>
-            <p class="hidden lg:block">Completar datos</p>  
           </button>
+          
         </td>
+
       </ng-container>
 
       <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
       <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
     </table>
+
+    
     <mat-paginator [length]="100" [pageSize]="10" [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page">
     </mat-paginator>
   </div>
-
-
-
 </section>
