@@ -1,0 +1,85 @@
+{
+    "deudores": [
+      {
+        "nroSolicitud": 1,
+        "nombre": "Juan",
+        "apellido": "Pérez",
+        "docIdentidad": "12345678A",
+        "status": "Pendiente",
+        "fechaCobranza": "2024-08-15"
+      },
+      {
+        "nroSolicitud": 2,
+        "nombre": "Ana",
+        "apellido": "López",
+        "docIdentidad": "87654321B",
+        "status": "Pagado",
+        "fechaCobranza": "2024-07-22"
+      },
+      {
+        "nroSolicitud": 3,
+        "nombre": "Carlos",
+        "apellido": "García",
+        "docIdentidad": "11223344C",
+        "status": "Pendiente",
+        "fechaCobranza": "2024-09-01"
+      },
+      {
+        "nroSolicitud": 4,
+        "nombre": "Carlos",
+        "apellido": "García",
+        "docIdentidad": "11223344C",
+        "status": "Pendiente",
+        "fechaCobranza": "2024-09-01"
+      },
+      {
+        "nroSolicitud": 5,
+        "nombre": "Carlos",
+        "apellido": "García",
+        "docIdentidad": "11223344C",
+        "status": "Pendiente",
+        "fechaCobranza": "2024-09-01"
+      },
+      {
+        "nroSolicitud": 6,
+        "nombre": "Carlos",
+        "apellido": "García",
+        "docIdentidad": "11223344C",
+        "status": "Pendiente",
+        "fechaCobranza": "2024-09-01"
+      },
+      {
+        "nroSolicitud": 7,
+        "nombre": "Carlos",
+        "apellido": "García",
+        "docIdentidad": "11223344C",
+        "status": "Pagado",
+        "fechaCobranza": "2024-09-01"
+      },
+      {
+        "nroSolicitud": 8,
+        "nombre": "Carlos",
+        "apellido": "García",
+        "docIdentidad": "11223344C",
+        "status": "Pagado",
+        "fechaCobranza": "2024-09-01"
+      },
+      {
+        "nroSolicitud": 9,
+        "nombre": "Carlos",
+        "apellido": "García",
+        "docIdentidad": "11223344C",
+        "status": "Pagado",
+        "fechaCobranza": "2024-09-01"
+      },
+      {
+        "nroSolicitud": 10,
+        "nombre": "Carlos",
+        "apellido": "García",
+        "docIdentidad": "11223344C",
+        "status": "Pagado",
+        "fechaCobranza": "2024-09-01"
+      }
+    ]
+  }
+  

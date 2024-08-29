@@ -6,17 +6,9 @@ import {MatIconModule} from '@angular/material/icon';
 import { CommonModule } from '@angular/common';
 import { StatusMenuComponent } from '../status-menu/status-menu.component';
 import { TagComponent } from '../../../../../../shared/components/tag/tag.component';
+import { debtors } from '../../interfaces/dbtors.interface';
 
-export interface PeriodicElement {
-  nombre: string;
-  apellido: string;
-  nroSolicitud: number;
-  docIdentidad: string;
-  status: string;
-  fechaCobranza: string;
-}
-
-const ELEMENT_DATA: PeriodicElement[] = [
+const ELEMENT_DATA: debtors[] = [
   {
     nroSolicitud: 1,
     nombre: 'Juan',
@@ -237,7 +229,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
 })
 export class CollectorDataTableComponent {
   displayedColumns: string[] = ['nroSolicitud','Nombre','Doc. identidad','Status','Fecha de Cobranza','acciones',];
-  dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
+  dataSource = new MatTableDataSource<debtors>(ELEMENT_DATA);
    
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   constructor(private router: Router) {}
