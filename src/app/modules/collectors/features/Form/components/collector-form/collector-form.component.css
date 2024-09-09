@@ -7,3 +7,26 @@
     --tw-ring-opacity: 1;
     --tw-ring-color: rgb(59 130 246 / var(--tw-ring-opacity)) /* #3b82f6 */;
 }
+
+
+::ng-deep .mat-mdc-text-field-wrapper{
+    border: 1px solid #94a3b8; 
+}
+
+::ng-deep .mat-mdc-text-field-wrapper.mdc-text-field.mdc-text-field--filled{
+    background-color: transparent;
+    height: 45px;
+    align-items: center;
+}
+
+::ng-deep .mat-mdc-button-touch-target::after{
+    color: aqua;
+}
+
+::ng-deep .mat-mdc-button-touch-target::before{
+    color: aqua;
+}
+
+.svg.mat-datepicker-toggle-default-icon{
+    color: red;
+}
