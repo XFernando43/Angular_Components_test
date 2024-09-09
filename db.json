@@ -1,205 +1,234 @@
 {
-    "deudores": [
-      {
-        "nroSolicitud": 1,
-        "nombre": "Juan",
-        "apellido": "Pérez",
-        "docIdentidad": "12345678A",
-        "status": "Pendiente",
-        "fechaCobranza": "2024-08-15"
-      },
-      {
-        "nroSolicitud": 2,
-        "nombre": "Ana",
-        "apellido": "López",
-        "docIdentidad": "87654321B",
-        "status": "Pagado",
-        "fechaCobranza": "2024-07-22"
-      },
-      {
-        "nroSolicitud": 3,
-        "nombre": "Carlos",
-        "apellido": "García",
-        "docIdentidad": "11223344C",
-        "status": "Pendiente",
-        "fechaCobranza": "2024-09-01"
-      },
-      {
-        "nroSolicitud": 4,
-        "nombre": "Carlos",
-        "apellido": "García",
-        "docIdentidad": "11223344C",
-        "status": "Pendiente",
-        "fechaCobranza": "2024-09-01"
-      },
-      {
-        "nroSolicitud": 5,
-        "nombre": "Carlos",
-        "apellido": "García",
-        "docIdentidad": "11223344C",
-        "status": "Pendiente",
-        "fechaCobranza": "2024-09-01"
-      },
-      {
-        "nroSolicitud": 6,
-        "nombre": "Carlos",
-        "apellido": "García",
-        "docIdentidad": "11223344C",
-        "status": "Pendiente",
-        "fechaCobranza": "2024-09-01"
-      },
-      {
-        "nroSolicitud": 7,
-        "nombre": "Carlos",
-        "apellido": "García",
-        "docIdentidad": "11223344C",
-        "status": "Pagado",
-        "fechaCobranza": "2024-09-01"
-      },
-      {
-        "nroSolicitud": 8,
-        "nombre": "Carlos",
-        "apellido": "García",
-        "docIdentidad": "11223344C",
-        "status": "Pagado",
-        "fechaCobranza": "2024-09-01"
-      },
-      {
-        "nroSolicitud": 9,
-        "nombre": "Carlos",
-        "apellido": "García",
-        "docIdentidad": "11223344C",
-        "status": "Pagado",
-        "fechaCobranza": "2024-09-01"
-      },
-      {
-        "nroSolicitud": 10,
-        "nombre": "Carlos",
-        "apellido": "García",
-        "docIdentidad": "11223344C",
-        "status": "Pagado",
-        "fechaCobranza": "2024-09-01"
-      },
-      {
-        "nroSolicitud": 11,
-        "nombre": "Graciela",
-        "apellido": "García",
-        "docIdentidad": "11223421C",
-        "status": "Pendiente",
-        "fechaCobranza": "2024-09-01"
-      },
-      {
-        "nroSolicitud": 12,
-        "nombre": "Carlos",
-        "apellido": "García",
-        "docIdentidad": "11223343C",
-        "status": "Pagado",
-        "fechaCobranza": "2024-09-01"
-      },
-      {
-        "nroSolicitud": 13,
-        "nombre": "Carlos",
-        "apellido": "García",
-        "docIdentidad": "11223347F",
-        "status": "Pagado",
-        "fechaCobranza": "2024-09-01"
-      },
-      {
-        "nroSolicitud": 14,
-        "nombre": "Jorge",
-        "apellido": "Luna",
-        "docIdentidad": "11223345C",
-        "status": "Pagado",
-        "fechaCobranza": "2024-09-01"
-      },
-      {
-        "nroSolicitud": 15,
-        "nombre": "Sergio Neto",
-        "apellido": "Zalasar Peña",
-        "docIdentidad": "11223344C",
-        "status": "Pagado",
-        "fechaCobranza": "2024-09-01"
-      },
-      {
-        "nroSolicitud": 10,
-        "nombre": "Carlos",
-        "apellido": "García",
-        "docIdentidad": "11223344C",
-        "status": "Pagado",
-        "fechaCobranza": "2024-09-01"
-      },
-      {
-        "nroSolicitud": 10,
-        "nombre": "Carlos",
-        "apellido": "García",
-        "docIdentidad": "11223344C",
-        "status": "Pagado",
-        "fechaCobranza": "2024-09-01"
-      },
-      {
-        "nroSolicitud": 10,
-        "nombre": "Carlos",
-        "apellido": "García",
-        "docIdentidad": "11223344C",
-        "status": "Pagado",
-        "fechaCobranza": "2024-09-01"
-      },
-      {
-        "nroSolicitud": 10,
-        "nombre": "Carlos",
-        "apellido": "García",
-        "docIdentidad": "11223344C",
-        "status": "Pagado",
-        "fechaCobranza": "2024-09-01"
-      },
-      {
-        "nroSolicitud": 10,
-        "nombre": "Carlos",
-        "apellido": "García",
-        "docIdentidad": "11223344C",
-        "status": "Pagado",
-        "fechaCobranza": "2024-09-01"
-      },
-      {
-        "nroSolicitud": 10,
-        "nombre": "Carlos",
-        "apellido": "García",
-        "docIdentidad": "11223344C",
-        "status": "Pagado",
-        "fechaCobranza": "2024-09-01"
-      },
-      {
-        "nroSolicitud": 10,
-        "nombre": "Carlos",
-        "apellido": "García",
-        "docIdentidad": "11223344C",
-        "status": "Pagado",
-        "fechaCobranza": "2024-09-01"
-      },
-      {
-        "nroSolicitud": 10,
-        "nombre": "Carlos",
-        "apellido": "García",
-        "docIdentidad": "11223344C",
-        "status": "Pagado",
-        "fechaCobranza": "2024-09-01"
-      },
-      {
-        "nroSolicitud": 10,
-        "nombre": "Carlos",
-        "apellido": "García",
-        "docIdentidad": "11223344C",
-        "status": "Pagado",
-        "fechaCobranza": "2024-09-01"
-      },
-      {
-        "nroSolicitud": 10,
-        "nombre": "Carlos",
-        "apellido": "García",
-        "docIdentidad": "11223344C",
-        "status": "Pagado",
-        "fechaCobranza": "2024-09-01"
-      }
-    ]
-  }
-  
+  "deudores": [
+    {
+      "nroSolicitud": 1,
+      "nombre": "Juan",
+      "apellido": "Pérez",
+      "docIdentidad": "12345678A",
+      "status": "Pendiente",
+      "fechaCobranza": "2024-08-15"
+    },
+    {
+      "nroSolicitud": 2,
+      "nombre": "Ana",
+      "apellido": "López",
+      "docIdentidad": "87654321B",
+      "status": "Pagado",
+      "fechaCobranza": "2024-07-22"
+    },
+    {
+      "nroSolicitud": 3,
+      "nombre": "Carlos",
+      "apellido": "García",
+      "docIdentidad": "11223344C",
+      "status": "Pendiente",
+      "fechaCobranza": "2024-09-01"
+    },
+    {
+      "nroSolicitud": 4,
+      "nombre": "Carlos",
+      "apellido": "García",
+      "docIdentidad": "11223344C",
+      "status": "Pendiente",
+      "fechaCobranza": "2024-09-01"
+    },
+    {
+      "nroSolicitud": 5,
+      "nombre": "Carlos",
+      "apellido": "García",
+      "docIdentidad": "11223344C",
+      "status": "Pendiente",
+      "fechaCobranza": "2024-09-01"
+    },
+    {
+      "nroSolicitud": 6,
+      "nombre": "Carlos",
+      "apellido": "García",
+      "docIdentidad": "11223344C",
+      "status": "Pendiente",
+      "fechaCobranza": "2024-09-01"
+    },
+    {
+      "nroSolicitud": 7,
+      "nombre": "Carlos",
+      "apellido": "García",
+      "docIdentidad": "11223344C",
+      "status": "Pagado",
+      "fechaCobranza": "2024-09-01"
+    },
+    {
+      "nroSolicitud": 8,
+      "nombre": "Carlos",
+      "apellido": "García",
+      "docIdentidad": "11223344C",
+      "status": "Pagado",
+      "fechaCobranza": "2024-09-01"
+    },
+    {
+      "nroSolicitud": 9,
+      "nombre": "Carlos",
+      "apellido": "García",
+      "docIdentidad": "11223344C",
+      "status": "Pagado",
+      "fechaCobranza": "2024-09-01"
+    },
+    {
+      "nroSolicitud": 10,
+      "nombre": "Carlos",
+      "apellido": "García",
+      "docIdentidad": "11223344C",
+      "status": "Pagado",
+      "fechaCobranza": "2024-09-01"
+    },
+    {
+      "nroSolicitud": 11,
+      "nombre": "Graciela",
+      "apellido": "García",
+      "docIdentidad": "11223421C",
+      "status": "Pendiente",
+      "fechaCobranza": "2024-09-01"
+    },
+    {
+      "nroSolicitud": 12,
+      "nombre": "Carlos",
+      "apellido": "García",
+      "docIdentidad": "11223343C",
+      "status": "Pagado",
+      "fechaCobranza": "2024-09-01"
+    },
+    {
+      "nroSolicitud": 13,
+      "nombre": "Carlos",
+      "apellido": "García",
+      "docIdentidad": "11223347F",
+      "status": "Pagado",
+      "fechaCobranza": "2024-09-01"
+    },
+    {
+      "nroSolicitud": 14,
+      "nombre": "Jorge",
+      "apellido": "Luna",
+      "docIdentidad": "11223345C",
+      "status": "Pagado",
+      "fechaCobranza": "2024-09-01"
+    },
+    {
+      "nroSolicitud": 15,
+      "nombre": "Sergio Neto",
+      "apellido": "Zalasar Peña",
+      "docIdentidad": "11223344C",
+      "status": "Pagado",
+      "fechaCobranza": "2024-09-01"
+    },
+    {
+      "nroSolicitud": 10,
+      "nombre": "Carlos",
+      "apellido": "García",
+      "docIdentidad": "11223344C",
+      "status": "Pagado",
+      "fechaCobranza": "2024-09-01"
+    },
+    {
+      "nroSolicitud": 10,
+      "nombre": "Carlos",
+      "apellido": "García",
+      "docIdentidad": "11223344C",
+      "status": "Pagado",
+      "fechaCobranza": "2024-09-01"
+    },
+    {
+      "nroSolicitud": 10,
+      "nombre": "Carlos",
+      "apellido": "García",
+      "docIdentidad": "11223344C",
+      "status": "Pagado",
+      "fechaCobranza": "2024-09-01"
+    },
+    {
+      "nroSolicitud": 10,
+      "nombre": "Carlos",
+      "apellido": "García",
+      "docIdentidad": "11223344C",
+      "status": "Pagado",
+      "fechaCobranza": "2024-09-01"
+    },
+    {
+      "nroSolicitud": 10,
+      "nombre": "Carlos",
+      "apellido": "García",
+      "docIdentidad": "11223344C",
+      "status": "Pagado",
+      "fechaCobranza": "2024-09-01"
+    },
+    {
+      "nroSolicitud": 10,
+      "nombre": "Carlos",
+      "apellido": "García",
+      "docIdentidad": "11223344C",
+      "status": "Pagado",
+      "fechaCobranza": "2024-09-01"
+    },
+    {
+      "nroSolicitud": 10,
+      "nombre": "Carlos",
+      "apellido": "García",
+      "docIdentidad": "11223344C",
+      "status": "Pagado",
+      "fechaCobranza": "2024-09-01"
+    },
+    {
+      "nroSolicitud": 10,
+      "nombre": "Carlos",
+      "apellido": "García",
+      "docIdentidad": "11223344C",
+      "status": "Pagado",
+      "fechaCobranza": "2024-09-01"
+    },
+    {
+      "nroSolicitud": 10,
+      "nombre": "Carlos",
+      "apellido": "García",
+      "docIdentidad": "11223344C",
+      "status": "Pagado",
+      "fechaCobranza": "2024-09-01"
+    },
+    {
+      "nroSolicitud": 10,
+      "nombre": "Carlos",
+      "apellido": "García",
+      "docIdentidad": "11223344C",
+      "status": "Pagado",
+      "fechaCobranza": "2024-09-01"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "john_doe",
+      "password": "password123",
+      "email": "john.doe@example.com",
+      "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyLCJyb2wiOiJhZG1pbiIsInBlcm1pc29zIjpbImRhc2hib2FyZCIsInRhYmxlIiwiZm9ybSJdfQ.JGWkmyUJ1sLZFnqkKvcNExbgzIvZ6_BvcN0kWAR3lyw"
+    },
+    {
+      "id": 2,
+      "username": "jane_smith",
+      "password": "securePassword456",
+      "email": "jane.smith@example.com",
+      "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyLCJyb2wiOiJhZG1pbiIsInBlcm1pc29zIjpbImRhc2hib2FyZCIsInRhYmxlIiwiZm9ybSJdfQ.JGWkmyUJ1sLZFnqkKvcNExbgzIvZ6_BvcN0kWAR3lyw"
+    },
+    {
+      "id": 3,
+      "username": "alice_wonder",
+      "password": "alice2024",
+      "email": "alice.wonder@example.com",
+      "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyLCJyb2wiOiJhZG1pbiIsInBlcm1pc29zIjpbImRhc2hib2FyZCIsInRhYmxlIiwiZm9ybSJdfQ.JGWkmyUJ1sLZFnqkKvcNExbgzIvZ6_BvcN0kWAR3lyw"
+    },
+    {
+      "id": 4,
+      "username": "bob_builder",
+      "password": "bob12345",
+      "email": "bob.builder@example.com",
+      "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyLCJyb2wiOiJhZG1pbiIsInBlcm1pc29zIjpbImRhc2hib2FyZCIsInRhYmxlIiwiZm9ybSJdfQ.JGWkmyUJ1sLZFnqkKvcNExbgzIvZ6_BvcN0kWAR3lyw"
+    }
+  ]
+}

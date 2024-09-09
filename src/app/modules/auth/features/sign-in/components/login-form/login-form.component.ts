@@ -9,8 +9,21 @@ import { Router } from '@angular/router';
   styleUrl: './login-form.component.css'
 })
 export class LoginFormComponent {
+  public fieldCompletes:boolean=false;
+
+  public email:String='';
+  public password:String='';
+
   constructor(private router: Router) {}
   navigateTo(route: string) {
-    this.router.navigate([`/${route}`]);
+    
+    if(this.email == '' || this.password == '' || (this.password == '' && this.email == '')){
+      this.fieldCompletes = true;
+      stop;
+    }
+    
+    if(this.fieldCompletes){
+      this.router.navigate([`/${route}`]);
+    }
   }
 }
