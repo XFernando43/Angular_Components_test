@@ -21,4 +21,5 @@ import {MatInputModule} from '@angular/material/input';
 })
 export class CollectorFormComponent {
   readonly startDate = new Date(1990, 0, 1);
+  readonly startDate2 = new Date(1990, 0, 1);
 }
